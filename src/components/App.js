@@ -1,14 +1,16 @@
 import "../stylesheets/App.scss";
-import PlantillaFunc from "./function.js";
-import PlantillaClass from "./class.js";
+import PokemonList from "./PokemonList.js";
+import Pokemon from "./Pokemon.js";
 import pokemonsData from "../data/data.json";
+import logo from "../images/logoPokemon.png";
 
 function App() {
   return (
     <div className="App">
-      hola
+      <img src={logo} alt="logo Pokemon" className="logo" />
+      <h1> Lista de pokemons</h1>
+      <h2>¡Hazte con todos!</h2>
       <PokemonList pokemons={pokemonsData} />
-      <Pokemon />
     </div>
   );
 }
