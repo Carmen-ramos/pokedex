@@ -1,6 +1,7 @@
 import React from "react";
 import Pokemon from "./Pokemon";
 import "../stylesheets/PokemonList.scss";
+import propTypes from "prop-types";
 
 function PokemonList(props) {
   const pokemonCard = props.pokemons.map((card) => {
@@ -13,4 +14,9 @@ function PokemonList(props) {
 
   return <ul className="pokeCard">{pokemonCard}</ul>;
 }
+
+PokemonList.propTypes = {
+  card: propTypes.object,
+};
+
 export default PokemonList;

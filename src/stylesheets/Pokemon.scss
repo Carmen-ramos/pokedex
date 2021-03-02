@@ -5,18 +5,32 @@
   justify-content: center;
   border: 2px solid black;
   border-radius: 10px;
-  background-color: rgb(128, 128, 201);
+  background-image: url(../images/poke3.png);
+  // background-repeat: no-repeat;
+  //background-size: cover;
+  // background-color: rgb(128, 128, 201);
+  padding: 5px;
   margin: 10px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   &__pokeimg {
     width: 200px;
     height: 200px;
-    background-color: rgb(186, 186, 229);
+    background-image: url(../images/img.back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5%;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
   }
   &__title {
-    margin-top: 5px;
-    border-bottom: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    //border-bottom: 1px solid black;
     text-transform: uppercase;
+    background-color: rgb(211, 45, 45);
+    border-radius: 50%;
+    border: solid black 2px;
+    color: white;
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   }
   &__ul {
     padding: 0;
@@ -33,7 +47,8 @@
       text-transform: capitalize;
       font-weight: bold;
       box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
-      background-color: rgb(79, 79, 179);
+      background-color: white;
+      color: rgb(211, 45, 45);
     }
   }
 }

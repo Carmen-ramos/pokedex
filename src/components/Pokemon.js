@@ -1,5 +1,6 @@
 import React from "react";
 import "../stylesheets/Pokemon.scss";
+import propTypes from "prop-types";
 
 class Pokemon extends React.Component {
   render() {
@@ -12,7 +13,7 @@ class Pokemon extends React.Component {
         <section className="section">
           <img
             src={this.props.card.url}
-            alt="pokemon image"
+            alt={this.props.card.name}
             className="section__pokeimg"
           />
           <h3 className="section__title">{this.props.card.name} </h3>
@@ -22,4 +23,9 @@ class Pokemon extends React.Component {
     );
   }
 }
+Pokemon.protoTypes = {
+  name: propTypes.string,
+  url: propTypes.string,
+  types: propTypes.array,
+};
 export default Pokemon;
